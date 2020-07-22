@@ -198,14 +198,32 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="asset/image/active_directory/1.png" alt="butterfly image"
+                                    <img src="asset/image/ip_statisca.png" alt="butterfly image"
                                          class="modal-button"
                                          data-target="modal-image1">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>1. Iniciamos la instalación de los roles y características que se van a usar
+                                    <h4>1. Antes de comenzar a instalar nuestros servicios, debemos establecer una IP estática.</h4>
+                                    para eso, nos dirigimos a las propiedades de la red y en este caso será 192.168.13.1.
+                                    Por lo tanto, la máscara de red es 255.255.255.0.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/active_directory/1.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image2">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Iniciamos la instalación de los roles y características que se van a usar
                                         para hacer uso de Active Direectory.</h4>
                                 </div>
                             </div>
@@ -217,30 +235,13 @@
                                 <figure class="image is-4by3">
                                     <img src="asset/image/active_directory/2.png" alt="butterfly image"
                                          class="modal-button"
-                                         data-target="modal-image2">
-                                </figure>
-                            </div>
-                            <div class="card-content  modal-button" data-target="modal-card2">
-                                <div class="content">
-                                    <h4>2. Al finalizar la instalación, se procede al link que genera llamado: Promover
-                                        este servidor a controlador de dominio.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card is-shady">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="asset/image/active_directory/3.png" alt="butterfly image"
-                                         class="modal-button"
                                          data-target="modal-image3">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>3. En este momento se debe agregar un nuevo bosque, en el cual se debe especificar
-                                    el nombre de domimnio raíz. con este nombre de dominio vamos a trabajar de ahora en adelante</h4>
+                                    <h4>3. Al finalizar la instalación, se procede al link que genera llamado: Promover
+                                        este servidor a controlador de dominio.</h4>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +251,7 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/active_directory/1.png" alt="butterfly">
+                            <img src="asset/image/ip_statisca.png.png" alt="butterfly">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
@@ -259,7 +260,7 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/active_directory/2.png" alt="butterfly">
+                            <img src="asset/image/active_directory/1.png" alt="butterfly">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
@@ -268,7 +269,7 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/active_directory/3.png" alt="butterfly">
+                            <img src="asset/image/active_directory/2.png" alt="butterfly">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
@@ -283,6 +284,23 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
+                                    <img src="asset/image/active_directory/3.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image4">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. En este momento se debe agregar un nuevo bosque, en el cual se debe especificar
+                                        el nombre de domimnio raíz. con este nombre de dominio vamos a trabajar de ahora en adelante.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
                                     <img src="asset/image/active_directory/4.png" alt="butterfly image"
                                          class="modal-button"
                                          data-target="modal-image4">
@@ -290,13 +308,22 @@
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>4. Por último, se debe agregar una contraseña de modo de restauración de servicios
+                                    <h4>5. Por último, se debe agregar una contraseña de modo de restauración de servicios
                                     de directorio (DSRM).</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <div id="modal-image4" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/active_directory/3.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
                     <div id="modal-image4" class="modal modal-fx-3dSlit">
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
