@@ -941,7 +941,200 @@
                     </div>
                 </div>
             </section>
-        </div><!-- FIN EQUQ 5-->
+        </div>
+        <!-- FIN EQUQ 5-->
+        <div class="tab-pane " id="pane-6">
+            <div class="content">
+                <h1>Simple Mail Transfer Protocol</h1>
+                <p> El protocolo para transferencia simple de correo es un protocolo de red utilizado para el
+                    intercambio de mensajes de correo electrónico entre computadoras u otros dispositivos
+                    (PDA, teléfonos móviles, impresoras, etc).Son estándares oficiales de Internet que fueron
+                    reemplazados respectivamente por el RFC 2821 y el RFC 2822, que a su vez lo fueron por el RFC 5321 y
+                    el RFC 5322.1​</p>
+
+                <p>El funcionamiento de este protocolo se da en línea, de manera que opera en los servicios de correo
+                    electrónico. Sin embargo, este protocolo posee algunas limitaciones en cuanto a la recepción de
+                    mensajes en el servidor de destino (cola de mensajes recibidos). Como alternativa a esta limitación
+                    se asocia normalmente a este protocolo con otros, como el POP o IMAP, otorgando a SMTP la tarea
+                    específica de enviar correo, y recibirlos empleando los otros protocolos antes mencionados (POP O
+                    IMAP)..</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image25">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Para el uso de SMTP, se instaló <a href="https://www.mailenable.com/"> Mail Enabled</a>.
+                                        Luego de esto, se procede a abrir la aplicación. En la sección de Servers -> localhost ->
+                                         Services and connectors -> SMTP entramos a las propiedades y agregamos un nombre de dominio local.
+                                        y la dirección del DNS.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/2.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image26">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. En la parte de default mail domain name, se agrega la dirección "mail.alejo.dev</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/3.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image27">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Finalmente, se aplican los cambios y se cierra la ventana.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image25" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/1.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image26" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/2.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image27" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/4.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image251">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. Ahora, en la sección de Servers -> localhost -> System -> Services status
+                                        podemos ver todos los servicios, y en el menú lateral derecho, elegimos Restart
+                                        all services.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/5.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image261">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Ahora en la ruta Messaging Manager -> Post offices -> alejo.dev -> Mailboxes
+                                        Creamos  un nuevo Mailbox, que en este caso son las cuentas de correo electrónico
+                                        de los usuarios. Básicamente se crea con un nombre y una contraseña.
+                                        <br> Ese nombre al final es alejandro@alejo.dev como correo electrónico</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/6.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image271">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>6. Por último, en la ventana de configuración del IIS, entramos al MailEnabled WebMail
+                                        y en el menú lateral derecho entramos a enlaces de sitios. Luego entramos a "Agregar",
+                                         y en la ventana emergente agregamos el nombre del host mail.alejo.dev.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image251" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/4.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image261" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/5.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image271" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/6.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div><!-- FIN EQUQ 6-->
     </div>
 </section>
 <script src="asset/js/bulma.js"></script>
