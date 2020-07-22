@@ -105,6 +105,12 @@
                         <span>DNS</span>
                     </a>
                 </li>
+                <li data-target="pane-9" id="9">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-project-diagram"></i></span>
+                        <span>IIS/HTTP</span>
+                    </a>
+                </li>
                 <li data-target="pane-4" id="4">
                     <a>
                         <span class="icon is-small"><i class="fas fa-network-wired"></i></span>
@@ -429,6 +435,163 @@
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
                             <img src="asset/image/dns/3.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- IIS - HTTP Section -->
+        <div class="tab-pane " id="pane-9">
+            <div class="content">
+                <h1>IIS (Internet Information Services)</h1>
+                <p>Son las iniciales de Internet Information Services y si bien es más conocido como servidor web en
+                    realidad son un conjuntos de servicios que transforman un sistema Microsoft Windows en un servidor
+                    capaz de ofrecer servicios Web, FTP y SMTP entre otros.
+                    <br><br>
+                    En el caso de SMTP no está pensado como un servidor de correo completo sino simplemente como
+                    herramienta a disposición de las aplicaciones web alojadas para que puedan enviar correos electrónicos
+                    diferentes destinatarios pero no recibir correo de otros proveedores ya que no incorpora los protocolos IMAP/ṔOP.</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image51">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Como en pasos anteriores, se instalan los roles y características, en este
+                                        caso el servidor web (IIS).</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/2.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image52">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. En esta sección de seleccionar roles, activamos el servidor FTP con sus
+                                        respectivos roles asociados.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/3.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image53">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Al finalizar la instalación. En el panel izquierdo nos dirigimos al servidor IIS
+                                        y entramos al administrador de Internet Information Services..</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image51" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/1.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image52" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/2.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image53" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/4.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image54">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. En la ruta C/inetpub/wwwroot agregamos nuestro proyecto web.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/5.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image55">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Ahora en el administrador IIS, en la sección de Sitios dentro del servidor
+                                        principal, agregamos un sitio web. Se asigna un nombre, se selecciona la ruta
+                                        de acceso al código fuente (Ruta donde está ubicado el proyecto), Se selecciona
+                                        el tipo http, se agrega la dirección ip del servidor, y finalmente la dirección
+                                        del host.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image54" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/4.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image55" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/5.png" alt="but">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
