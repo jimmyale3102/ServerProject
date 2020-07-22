@@ -761,7 +761,187 @@
                 </section>
             </div>
         </div>
-        <!--  -->
+        <!-- FTP Section -->
+        <div class="tab-pane " id="pane-5">
+            <div class="content">
+                <h1>File Transfer Protocol</h1>
+                <p> El protocolo FTP (File Transfer Protocol), o Protocolo de transferencia de archivos por su
+                    traducción al español, es un protocolo de red utilizado para la transferencia de archivos entre las
+                    computadoras conectadas a una red TCP. En la actualidad son muchos los usuarios que han reemplazado
+                    al FTP por servicios de almacenamiento en línea como Dropbox, Google Drive u OneDrive, sobre todo
+                    por la comodidad de uso y transparencia que estos últimos ofrecen.</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image22">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Como ya se instalaron los roles y características en pasos anteriores del IIS,
+                                         entonces creamos una carpeta en la ruta C/inetpub/ftproot/ llamada
+                                        dtpTest, la cual contiene un archivo de texto llamado test.ftp.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/2.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image23">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Ahora en la ventana de Administrador de Internet Information Services,
+                                        creamos un sitio FTP a nivel del servidor.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/3.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image24">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. como nombre del sitio dejamos ftptest, y como ruta elegimos la misma donde
+                                        creamos la carpeta ftpTest.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image22" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/1.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image23" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/2.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image24" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/4.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image221">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. Luego, se debe ingresar la dirección IP, en este caso la del servidor.
+                                        También elegimos la opción de iniciar sitio FTP automáticamente sin SSL.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/5.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image231">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Se elige la autenticación anónima, se permite el acceso a todos los usuarios
+                                        y finalmente se dan permisos de lectura y escritura.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/6.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image241">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>6. Como resultado, abrimos el navegador Internet Explorer, y digitamos en la
+                                        barra de búsqueda ftp://192.168.13.1 y se puede visualizar los archivos que se
+                                        compartieron.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image221" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/4.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image231" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/5.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image241" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/6.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div><!-- FIN EQUQ 5-->
     </div>
 </section>
 <script src="asset/js/bulma.js"></script>
