@@ -50,11 +50,11 @@
     height: 100%;
 }
 .hero.is-info {
-    background-color: #3b8ae1;
+    background-color: #212121;
     color: #fff;
 }
 .navbar.is-info {
-    background-color: #3b8ae1;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -64,6 +64,6 @@
 
 .navbar.is-info:hover,
 .navbar.is-info:focus{
-    background-color: #3b8ae1;
+    background-color: #484848;
     color: #fff;
 }

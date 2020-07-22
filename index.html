@@ -94,15 +94,21 @@
                     </a>
                 </li>
                 <li data-target="pane-2" id="2">
-                    <!--<a>
+                    <a>
                         <span class="icon is-small"><i class="fa fa-object-group"></i></span>
                         <span>Active Directory</span>
-                    </a>-->
+                    </a>
                 </li>
                 <li data-target="pane-3" id="3">
                     <a>
                         <span class="icon is-small"><i class="fas fa-project-diagram"></i></span>
                         <span>DNS</span>
+                    </a>
+                </li>
+                <li data-target="pane-9" id="9">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-project-diagram"></i></span>
+                        <span>IIS/HTTP</span>
                     </a>
                 </li>
                 <li data-target="pane-4" id="4">
@@ -126,7 +132,1173 @@
             </ul>
         </ul>
     </div>
-    
+    <!-- Body Section -->
+    <div class="tab-content">
+        <div class="tab-pane is-active" id="pane-1">
+            <div class="content">
+                <h1>Taller de Windows Server r12</h1>
+                <p> Windows Server 2012 es un sistema operativo con todas las funciones
+                    para servidor, basado en las mejoras que Microsoft presentó en Windows Server 2008 Release 2.
+                    Windows Server 2012 es el sucesor de Windows Server 2008 R2</p>
+
+                <h2>Descripción</h2>
+                <p>El taller de Windows Server r12, da una pequeña descripción sobre lo más escencial de configuración
+                    a momento de instalar y montar los servicios de:
+                </p>
+                <ul>
+                    <li>Active Directory.</li>
+                    <li>Domain Name System (DNS).</li>
+                    <li>Dynamic Host Configuration Protocol (DHCP).</li>
+                    <li>File Transfer Protocol (FTP).</li>
+                    <li>Simple Mail Transfer Protocol (SMTP).</li>
+                </ul>
+                <h2>Instalacion de Windows Server r12</h2>
+                <p>Para la instación y desarrollo del taller, se procedio a descargar una Máquina Virtual, en este caso,
+                    <a href="https://www.vmware.com/">VMware</a> y obtenida la imagen .iso de sistema operativo, se dio
+                    inicio al desarrollo del taller. <br>La instalación de Windows Server 2012, es muy acorde a las
+                    necesidades de cada individuo, en este caso se utilizo la instalacion básica que se encuentra en la Red.</p>
+                <figure class="image is-4by3">
+                    <img src="asset/image/vmware.PNG" alt="butterfly image"
+                         class="modal-button"
+                         data-target="modal-image1">
+                </figure>
+
+                <h2>Acerca de mí... </h2>
+                <p>
+                    Tal vez nos conocemos, pero si no, es estupendo que me conoscas.
+                    <br>
+                    Tengo 22 años y soy estudiante de Ingeniería de Sistemas y Computación en la Universidad Pedagógica
+                    y Tecnológica de Colombia (UPTC). Soy una persona que puede cometer errores y, por lo tanto, aprender
+                    de ellos para lograr el éxito personal. Me gusta estar actualizado en informática y tecnologías en general.
+                    <br><br>
+                    Soy cofundador  y co-organizador de <a href="https://boyaconf.com/">BoyaConf</a>, la primer conferencia
+                    de desaarrollo en Boyacá, Colombia. Así mismo, apoyo a diferentes comunidades en Colombia.
+                    Por otra parte, actualmente me encuentro trabajando como desarrollador móvil, más específicamente en
+                    dispositivos Android.
+                    <br><br>
+                    Si necesitas ayuda, o quieres conocer más acerca de mí, no dudes en contactarme!!
+                </p>
+            </div>
+        </div>
+        <!-- Active Directory section -->
+        <div class="tab-pane" id="pane-2">
+            <div class="content">
+                <h1>Active Directory</h1>
+                <p> Active Directory (AD) es un servicio de directorio para su uso en un entorno Windows Server. Se
+                    trata de una estructura de base de datos distribuida y jerárquica que comparte información de
+                    infraestructura para localizar, proteger, administrar y organizar los recursos del equipo y de la
+                    red, como archivos, usuarios, grupos, periféricos y dispositivos de red.
+                </p>
+                <br>
+                <p>Active Directory es el servicio de directorio propietario de Microsoft para su uso en redes de dominio
+                    de Windows. Cuenta con funciones de autenticación y autorización y proporciona un framework para otros
+                    servicios similares. Básicamente, el directorio consiste en una base de datos LDAP que contiene objetos
+                    en red. Active Directory utiliza el sistema operativo Windows Server.
+                </p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ip_statisca.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image1">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Antes de comenzar a instalar nuestros servicios, debemos establecer una IP estática.</h4>
+                                    para eso, nos dirigimos a las propiedades de la red y en este caso será 192.168.13.1.
+                                    Por lo tanto, la máscara de red es 255.255.255.0.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/active_directory/1.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image2">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Iniciamos la instalación de los roles y características que se van a usar
+                                        para hacer uso de Active Direectory.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/active_directory/2.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image3">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Al finalizar la instalación, se procede al link que genera llamado: Promover
+                                        este servidor a controlador de dominio.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image1" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ip_statisca.png.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image2" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/active_directory/1.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image3" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/active_directory/2.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/active_directory/3.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image4">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. En este momento se debe agregar un nuevo bosque, en el cual se debe especificar
+                                        el nombre de domimnio raíz. con este nombre de dominio vamos a trabajar de ahora en adelante.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/active_directory/4.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image5">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Por último, se debe agregar una contraseña de modo de restauración de servicios
+                                    de directorio (DSRM).</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image4" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/active_directory/3.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image5" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/active_directory/4.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Domain Name System Section -->
+        <div class="tab-pane" id="pane-3">
+            <div class="content">
+                <h1>Domain Name System</h1>
+                <p>El sistema de nombres de dominio (Domain Name System o DNS, por sus siglas en inglés) es un sistema de
+                    nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una
+                    red privada. Este sistema asocia información variada con nombre de dominio asignado a cada uno de los
+                    participantes. Su función más importante es "traducir" nombres inteligibles para las personas en
+                    identificadores binarios asociados con los equipos conectados a la red, esto con el propósito de
+                    poder localizar y direccionar estos equipos mundialmente.​</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/dns/1.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image7">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Como en la sección de Active Directory se creó el dominio con el que vamos a trabajar,
+                                        en esta parte vamos a configurar el servidor DNS. Se procede a la sección de
+                                    Administración de DNS. Aquí, vamos a agregar una nueva zona</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/dns/2.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image8">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Luego, vamos a ingresar el nomobre de la zona, que en este caso es www.alejo.dev.
+                                    Con este nombre, va a actuar el servidor de autorización.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/dns/3.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image9">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Ahora, nos dirigimos a nuestro nombre de dominio creado
+                                        anteriormente con la zona, y vamos a agregar un host nuevo. Esto se puede encontrar
+                                        en las opciones desplegadas al hacer click derecho. ahí lo único que se va a agregar
+                                        es la dirección IP</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image7" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/dns/1.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image8" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/dns/2.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image9" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/dns/3.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- IIS - HTTP Section -->
+        <div class="tab-pane " id="pane-9">
+            <div class="content">
+                <h1>IIS (Internet Information Services)</h1>
+                <p>Son las iniciales de Internet Information Services y si bien es más conocido como servidor web en
+                    realidad son un conjuntos de servicios que transforman un sistema Microsoft Windows en un servidor
+                    capaz de ofrecer servicios Web, FTP y SMTP entre otros.
+                    <br><br>
+                    En el caso de SMTP no está pensado como un servidor de correo completo sino simplemente como
+                    herramienta a disposición de las aplicaciones web alojadas para que puedan enviar correos electrónicos
+                    diferentes destinatarios pero no recibir correo de otros proveedores ya que no incorpora los protocolos IMAP/ṔOP.</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image51">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Como en pasos anteriores, se instalan los roles y características, en este
+                                        caso el servidor web (IIS).</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/2.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image52">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. En esta sección de seleccionar roles, activamos el servidor FTP con sus
+                                        respectivos roles asociados.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/3.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image53">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Al finalizar la instalación. En el panel izquierdo nos dirigimos al servidor IIS
+                                        y entramos al administrador de Internet Information Services..</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image51" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/1.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image52" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/2.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image53" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/4.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image54">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. En la ruta C/inetpub/wwwroot agregamos nuestro proyecto web.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/iis_http/5.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image55">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Ahora en el administrador IIS, en la sección de Sitios dentro del servidor
+                                        principal, agregamos un sitio web. Se asigna un nombre, se selecciona la ruta
+                                        de acceso al código fuente (Ruta donde está ubicado el proyecto), Se selecciona
+                                        el tipo http, se agrega la dirección ip del servidor, y finalmente la dirección
+                                        del host.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image54" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/4.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image55" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/iis_http/5.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- DHCP Section -->
+        <div class="tab-pane " id="pane-4">
+            <div class="content">
+                <h1>Dynamic Host Configuration Protocol</h1>
+                <p> El DHCP se desarrolló como solución para redes de gran envergadura y ordenadores portátiles y por
+                    ello complementa a BOOTP, entre otras cosas, por su capacidad para asignar automáticamente direcciones
+                    de red reutilizables y por la existencia de posibilidades de configuración adicionales.</p>
+
+                <p>La asignación de direcciones con DHCP se basa en un modelo cliente-servidor: el terminal que quiere
+                    conectarse solicita la configuración IP a un servidor DHCP que, por su parte, recurre a una base de
+                    datos que contiene los parámetros de red asignables.​</p>
+
+                <h1>Instalación y Configuración </h1>
+
+                <section class="container">
+                    <div class="columns features">
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/1.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image16">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>1. Iniciamos instalando DHCP, de la misma forma que hemos instalado las
+                                            anteriores caracteristicas, de la misma manera leer los pasos detalladamente
+                                            y terminar la instalación.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/2.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image17">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>2. Una vez finalizada la instalación, nos dirigimos a la sección para completar
+                                            la configuración de DHCP</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/3.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image18">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>3. Aquí, se deben asignar las credenciales que se usarán como autorización
+                                            entre DHCP y AD DS. Se dejan las que aparecen or defecto.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-image16" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/1.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image17" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/2.png" alt="butterfly">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image18" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/3.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="container">
+                    <div class="columns features">
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/4.png" alt="butterfly"
+                                             class="modal-button"
+                                             data-target="modal-image19">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>4. Finalmente nos indican los estados de los pasos que se hicieron anteriormente.
+                                            aquí solo daremos en cerrar..</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/5.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image20">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>5. Vamos a la sección de herramientas en el navbar, y nos dirigimos a la sección
+                                            de DHCP.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/6.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image21">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>6. Una vez aquí, nos dirigimos en el menú lateral izquierdo a la sección de
+                                            IPv4 dentro de nuestro servidor. Aquí agregamos un nuevo ámbito.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-image19" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/4.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image20" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/5.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image21" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/6.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="columns features">
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/7.png" alt="butterfly"
+                                             class="modal-button"
+                                             data-target="modal-img1">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>7. En el asistente de creación de un nuevo ámbito debemos ingresar el nombre
+                                            del mismo. En este caso es Group.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/8.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-img2">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>8. Luego, se debe ingresar un rango de direcciones IP, esto nos va a indicar
+                                            la cantidad de clientes que se podrán conectar a nuestro servidor.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/9.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-img3">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>9. Ahora se debe agregar la dirección de la puerta de enlace..</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-img1" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/7.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-img2" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/8.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-img3" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/9.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="columns features">
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/10.png" alt="butterfly"
+                                             class="modal-button"
+                                             data-target="modal-img4">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>10. Ahora se debe agregar el nombre del servidor, y luego dar en la opción de
+                                            "Resolver", esto para que se obtenga la dirección Ip del servidor (la misma que
+                                            asignamos como estática).</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/dhcp/11.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-img5">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>11. Finalmente, esa dirección IP que se generó en el paso anterior, la agregamos
+                                            a la lista que se tiene y damos en siguiente.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-img4" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/10.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-img5" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/dhcp/11.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- FTP Section -->
+        <div class="tab-pane " id="pane-5">
+            <div class="content">
+                <h1>File Transfer Protocol</h1>
+                <p> El protocolo FTP (File Transfer Protocol), o Protocolo de transferencia de archivos por su
+                    traducción al español, es un protocolo de red utilizado para la transferencia de archivos entre las
+                    computadoras conectadas a una red TCP. En la actualidad son muchos los usuarios que han reemplazado
+                    al FTP por servicios de almacenamiento en línea como Dropbox, Google Drive u OneDrive, sobre todo
+                    por la comodidad de uso y transparencia que estos últimos ofrecen.</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image22">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Como ya se instalaron los roles y características en pasos anteriores del IIS,
+                                         entonces creamos una carpeta en la ruta C/inetpub/ftproot/ llamada
+                                        dtpTest, la cual contiene un archivo de texto llamado test.ftp.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/2.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image23">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Ahora en la ventana de Administrador de Internet Information Services,
+                                        creamos un sitio FTP a nivel del servidor.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/3.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image24">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. como nombre del sitio dejamos ftptest, y como ruta elegimos la misma donde
+                                        creamos la carpeta ftpTest.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image22" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/1.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image23" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/2.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image24" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/4.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image221">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. Luego, se debe ingresar la dirección IP, en este caso la del servidor.
+                                        También elegimos la opción de iniciar sitio FTP automáticamente sin SSL.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/5.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image231">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Se elige la autenticación anónima, se permite el acceso a todos los usuarios
+                                        y finalmente se dan permisos de lectura y escritura.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/ftp/6.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image241">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>6. Como resultado, abrimos el navegador Internet Explorer, y digitamos en la
+                                        barra de búsqueda ftp://192.168.13.1 y se puede visualizar los archivos que se
+                                        compartieron.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image221" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/4.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image231" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/5.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image241" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/ftp/6.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- FIN EQUQ 5-->
+        <div class="tab-pane " id="pane-6">
+            <div class="content">
+                <h1>Simple Mail Transfer Protocol</h1>
+                <p> El protocolo para transferencia simple de correo es un protocolo de red utilizado para el
+                    intercambio de mensajes de correo electrónico entre computadoras u otros dispositivos
+                    (PDA, teléfonos móviles, impresoras, etc).Son estándares oficiales de Internet que fueron
+                    reemplazados respectivamente por el RFC 2821 y el RFC 2822, que a su vez lo fueron por el RFC 5321 y
+                    el RFC 5322.1​</p>
+
+                <p>El funcionamiento de este protocolo se da en línea, de manera que opera en los servicios de correo
+                    electrónico. Sin embargo, este protocolo posee algunas limitaciones en cuanto a la recepción de
+                    mensajes en el servidor de destino (cola de mensajes recibidos). Como alternativa a esta limitación
+                    se asocia normalmente a este protocolo con otros, como el POP o IMAP, otorgando a SMTP la tarea
+                    específica de enviar correo, y recibirlos empleando los otros protocolos antes mencionados (POP O
+                    IMAP)..</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image25">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Para el uso de SMTP, se instaló <a href="https://www.mailenable.com/"> Mail Enabled</a>.
+                                        Luego de esto, se procede a abrir la aplicación. En la sección de Servers -> localhost ->
+                                         Services and connectors -> SMTP entramos a las propiedades y agregamos un nombre de dominio local.
+                                        y la dirección del DNS.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/2.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image26">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. En la parte de default mail domain name, se agrega la dirección "mail.alejo.dev</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/3.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image27">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Finalmente, se aplican los cambios y se cierra la ventana.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image25" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/1.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image26" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/2.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image27" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/4.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image251">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. Ahora, en la sección de Servers -> localhost -> System -> Services status
+                                        podemos ver todos los servicios, y en el menú lateral derecho, elegimos Restart
+                                        all services.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/5.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image261">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Ahora en la ruta Messaging Manager -> Post offices -> alejo.dev -> Mailboxes
+                                        Creamos  un nuevo Mailbox, que en este caso son las cuentas de correo electrónico
+                                        de los usuarios. Básicamente se crea con un nombre y una contraseña.
+                                        <br> Ese nombre al final es alejandro@alejo.dev como correo electrónico</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/6.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image271">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>6. Por último, en la ventana de configuración del IIS, entramos al MailEnabled WebMail
+                                        y en el menú lateral derecho entramos a enlaces de sitios. Luego entramos a "Agregar",
+                                         y en la ventana emergente agregamos el nombre del host mail.alejo.dev.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image251" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/4.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image261" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/5.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image271" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/6.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div><!-- FIN EQUQ 6-->
+    </div>
 </section>
 <script src="asset/js/bulma.js"></script>
 <script src="asset/js/tabs.js"></script>
