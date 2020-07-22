@@ -67,3 +67,7 @@
     background-color: #484848;
     color: #fff;
 }
+
+.image-rounded{
+    border-radius: 50%;
+}
