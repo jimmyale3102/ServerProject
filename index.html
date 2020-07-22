@@ -174,7 +174,6 @@
                 </p>
             </div>
         </div>
-
         <!-- Active Directory section -->
         <div class="tab-pane" id="pane-2">
             <div class="content">
@@ -309,7 +308,107 @@
                     </div>
                 </div>
             </section>
-        </div><!-- FIN DE ETIQ 2-->
+        </div>
+        <!-- Domain Name System Section -->
+        <div class="tab-pane" id="pane-3">
+            <div class="content">
+                <h1>Domain Name System</h1>
+                <p>El sistema de nombres de dominio (Domain Name System o DNS, por sus siglas en inglés) es un sistema de
+                    nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una
+                    red privada. Este sistema asocia información variada con nombre de dominio asignado a cada uno de los
+                    participantes. Su función más importante es "traducir" nombres inteligibles para las personas en
+                    identificadores binarios asociados con los equipos conectados a la red, esto con el propósito de
+                    poder localizar y direccionar estos equipos mundialmente.​</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/dns/1.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image7">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Como en la sección de Active Directory se creó el dominio con el que vamos a trabajar,
+                                        en esta parte vamos a configurar el servidor DNS. Se procede a la sección de
+                                    Administración de DNS. Aquí, vamos a agregar una nueva zona</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/dns/2.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image8">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Luego, vamos a ingresar el nomobre de la zona, que en este caso es www.alejo.dev.
+                                    Con este nombre, va a actuar el servidor de autorización.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/dns/3.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image9">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Ahora, nos dirigimos a nuestro nombre de dominio creado
+                                        anteriormente con la zona, y vamos a agregar un host nuevo. Esto se puede encontrar
+                                        en las opciones desplegadas al hacer click derecho. ahí lo único que se va a agregar
+                                        es la dirección IP</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image7" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/dns/1.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image8" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/dns/2.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image9" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/dns/3.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </section>
 <script src="asset/js/bulma.js"></script>
