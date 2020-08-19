@@ -686,7 +686,8 @@
 
                 </div>
             </section>
-        </div><!-- FIN EQUQ 5-->
+        </div>
+        <!-- SMTP-->
         <div class="tab-pane " id="pane-6">
             <div class="content">
                 <h1>Simple Mail Transfer Protocol</h1>
@@ -712,16 +713,15 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="asset/image/smtp/desc1.png" alt="but"
+                                    <img src="asset/image/linux/smtp/2.png" alt="but"
                                          class="modal-button"
                                          data-target="modal-image25">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>1. Se dio inicio a la configuación de SMTP por medio de el complemento llamado
-                                        MailEnable,es un servidor de correo electrónico comercial basado en Windows de
-                                        forma gratuita se puede implementar y dar servicios SMTP por medios de DNS.
+                                    <h4>1. Se instala y configura el postfix para permitir el envío y recepción de correos
+                                        electrónicos
                                     </h4>
                                 </div>
                             </div>
@@ -731,22 +731,14 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="asset/image/smtp/instm2.png" alt="but"
+                                    <img src="asset/image/linux/smtp/5.png" alt="but"
                                          class="modal-button"
                                          data-target="modal-image26">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>2. Despueés de descargar el complemento, lo ejecutamos para instalarlo dentro
-                                        del servidor , siguiendo los pasos mostrados y leyendo con atención cada sección
-                                        dentro del asistente de instalación</h4>
-                                    <br>
-                                    <h4>Seguido nos pedira la configuración tanto del nombre del dominio como el del la
-                                        IP, asigando para el puerto 25,se continuara con la instalacion, la cual puede
-                                        tardar algunos
-                                        minutos, siguiente nos pedira el nombre con el cual sera reconodido el servicio
-                                        de emial empresarial</h4>
+                                    <h4>2. Se configura para los protocolos ipv4</h4>
                                 </div>
                             </div>
                         </div>
@@ -755,21 +747,15 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="asset/image/smtp/confimaiienable3.png" alt="but"
+                                    <img src="asset/image/linux/smtp/6.png" alt="but"
                                          class="modal-button"
                                          data-target="modal-image27">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>3. Al tener instalado y configurado el MailEnable procedemos al configuración de
-                                        parte de la opción SMTP que se encuentra en la parte izquierda del menu , en
-                                        donde se encontrara la opción, hacemos click derecho y nos dirijimos
-                                        propiedades, asiganamos DNS que estamos trabajando, junto con su IP.</h4>
-
-                                    <h4>Al tener ya configurada la opcion dentro las propiedades de SMTP , asignamos los
-                                        usuarios que va a tener nuestro servio de email, tal y como se muestra en la
-                                        figura.</h4>
+                                    <h4>3. Luego de configurar el postfix, se procede a reconfigurar y que se realicen y
+                                        apliquen todos los cambios realizados anteiormente </h4>
                                 </div>
                             </div>
                         </div>
@@ -779,9 +765,7 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/smtp/desc1.png" alt="but">
-                            <img src="asset/image/smtp/desc2.png" alt="but">
-                            <img src="asset/image/smtp/desc3.png" alt="but">
+                            <img src="asset/image/linux/smtp/2.png" alt="but">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
@@ -790,9 +774,7 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/smtp/instm2.png" alt="but">
-                            <img src="asset/image/smtp/conf1.png" alt="but">
-                            <img src="asset/image/smtp/conf2.png" alt="but">
+                            <img src="asset/image/linux/smtp/5.png" alt="but">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
@@ -801,16 +783,179 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/smtp/confimaiienable3.png" alt="but">
-                            <img src="asset/image/smtp/confimaiienable4.png" alt="but">
-                            <img src="asset/image/smtp/confimaiienable5.png" alt="but">
+                            <img src="asset/image/linux/smtp/6.png" alt="but">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
                     </div>
                 </div>
             </section>
-        </div><!-- FIN EQUQ 6-->
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/smtp/9.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image125">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. Se instala y configura el courier pop
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/smtp/11.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image126">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Se configura el squirrelmail para que se pueda comunicar con el postfix</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/smtp/14.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image127">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>6. se crea un enlae llamado webmail apuntando al squirrelmail </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image125" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/smtp/9.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image126" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/smtp/11.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image127" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/smtp/14.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/smtp/15.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image225">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>7. Se corre el servidor apache2
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/smtp/16.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image226">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>8. Se realiza el envío de un email a través de la consola del usuario useraux2
+                                    al usuario alejandro</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/smtp/17.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image227">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>9. Finalmente, desde el local host mas la ruta del webmail, se puede acceder
+                                        al squirrelmail, el cuál ofrecerá una interfaz para el envío y recepción de correos
+                                    electrónicos</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image225" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/smtp/15.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image226" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/smtp/16.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image227" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/smtp/17.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </section>
 <script src="asset/js/bulma.js"></script>
