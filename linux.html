@@ -508,15 +508,12 @@
         <!-- FTP-->
         <div class="tab-pane " id="pane-4">
             <div class="content">
-                <h1>Dynamic Host Configuration Protocol</h1>
-                <p> El DHCP se desarrolló como solución para redes de gran envergadura y
-                    ordenadores portátiles y por ello complementa a BOOTP, entre otras cosas, por su capacidad para
-                    asignar automáticamente direcciones de red reutilizables y por la existencia de posibilidades de
-                    configuración adicionales.</p>
-
-                <p>La asignación de direcciones con DHCP se basa en un modelo cliente-servidor: el terminal que quiere
-                    conectarse solicita la configuración IP a un servidor DHCP que, por su parte, recurre a una base de
-                    datos que contiene los parámetros de red asignables.​</p>
+                <h1>File Transfer Protocol</h1>
+                <p> El protocolo FTP (File Transfer Protocol), o Protocolo de transferencia de archivos por su
+                    traducción al español, es un protocolo de red utilizado para la transferencia de archivos entre las
+                    computadoras conectadas a una red TCP. En la actualidad son muchos los usuarios que han reemplazado
+                    al FTP por servicios de almacenamiento en línea como Dropbox, Google Drive u OneDrive, sobre todo
+                    por la comodidad de uso y transparencia que estos últimos ofrecen.</p>
 
                 <h1>Instalación y Configuración </h1>
 
@@ -526,15 +523,14 @@
                             <div class="card is-shady">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
-                                        <img src="asset/image/linux/dhinstall1.png" alt="butterfly image"
+                                        <img src="asset/image/linux/ftp/1.png" alt="butterfly image"
                                              class="modal-button"
                                              data-target="modal-image16">
                                     </figure>
                                 </div>
                                 <div class="card-content  modal-button" data-target="modal-card2">
                                     <div class="content">
-                                        <h4>1.Iniciamos instando DHCP, de la misma forma que hemos instalado las
-                                            anteriores por terminal de Linux </h4>
+                                        <h4>1. Instalación de servidor vsftpd para linux. </h4>
                                     </div>
                                 </div>
                             </div>
@@ -543,15 +539,14 @@
                             <div class="card is-shady">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
-                                        <img src="asset/image/linux/dhconf1.png" alt="butterfly image"
+                                        <img src="asset/image/linux/ftp/3.png" alt="butterfly image"
                                              class="modal-button"
                                              data-target="modal-image17">
                                     </figure>
                                 </div>
                                 <div class="card-content  modal-button" data-target="modal-card2">
                                     <div class="content">
-                                        <h4>2. Seguido de instalar DHCP, para poder
-                                            configurar cada na de sus caracteristicas para nuevas conexiones de red</h4>
+                                        <h4>2. Abrimos los puertos 20 y 21 </h4>
                                     </div>
                                 </div>
                             </div>
@@ -560,14 +555,14 @@
                             <div class="card is-shady">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
-                                        <img src="asset/image/linux/dhconf2.png" alt="butterfly image"
+                                        <img src="asset/image/linux/ftp/5.png" alt="butterfly image"
                                              class="modal-button"
                                              data-target="modal-image18">
                                     </figure>
                                 </div>
                                 <div class="card-content  modal-button" data-target="modal-card2">
                                     <div class="content">
-                                        <h4>3.</h4>
+                                        <h4>3. Se configura el archivo conf para permitir el acceso al ftp</h4>
                                     </div>
                                 </div>
                             </div>
@@ -577,8 +572,7 @@
                             <div class="modal-background"></div>
                             <div class="modal-content is-huge is-image">
                                 <!-- content -->
-                                <img src="asset/image/linux/dhinstall1.png" alt="but">
-                                <img src="asset/image/dhcp/install2.png" alt="bu">
+                                <img src="asset/image/linux/ftp/1.png" alt="but">
                                 <!-- end content -->
                             </div>
                             <button class="modal-close is-large" aria-label="close"></button>
@@ -587,7 +581,7 @@
                             <div class="modal-background"></div>
                             <div class="modal-content is-huge is-image">
                                 <!-- content -->
-                                <img src="asset/image/linux/dhconf1.png" alt="butterfly">
+                                <img src="asset/image/linux/ftp/3.png" alt="butterfly">
                                 <!-- end content -->
                             </div>
                             <button class="modal-close is-large" aria-label="close"></button>
@@ -596,7 +590,7 @@
                             <div class="modal-background"></div>
                             <div class="modal-content is-huge is-image">
                                 <!-- content -->
-                                <img src="asset/image/linux/dhconf2.png" alt="but">
+                                <img src="asset/image/linux/ftp/5.png" alt="but">
                                 <!-- end content -->
                             </div>
                             <button class="modal-close is-large" aria-label="close"></button>
@@ -611,92 +605,51 @@
                             <div class="card is-shady">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
-                                        <img src="asset/image/linux/dhconf3.png" alt="butterfly"
+                                        <img src="asset/image/linux/ftp/6.png" alt="butterfly"
                                              class="modal-button"
                                              data-target="modal-image19">
                                     </figure>
                                 </div>
                                 <div class="card-content  modal-button" data-target="modal-card2">
                                     <div class="content">
-                                        <h4>4.</h4>
+                                        <h4>4. Se verifica que el servidor esté corriendo correctamente</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-4">
-                            <div class="card is-shady">
-                                <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="asset/image/linux/dhconf4.png" alt="butterfly image"
-                                             class="modal-button"
-                                             data-target="modal-image20">
-                                    </figure>
-                                </div>
-                                <div class="card-content  modal-button" data-target="modal-card2">
-                                    <div class="content">
-                                        <h4>6.</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-4">
-                            <div class="card is-shady">
-                                <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="asset/image/linux/dhconf5.png" alt="butterfly image"
-                                             class="modal-button"
-                                             data-target="modal-image21">
-                                    </figure>
-                                </div>
-                                <div class="card-content  modal-button" data-target="modal-card2">
-                                    <div class="content">
-                                        <h4>7.</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div id="modal-image19" class="modal modal-fx-3dSlit">
                             <div class="modal-background"></div>
                             <div class="modal-content is-huge is-image">
                                 <!-- content -->
-                                <img src="asset/image/linux/dhconf3.png" alt="but">
+                                <img src="asset/image/linux/ftp/6.png" alt="but">
                                 <!-- end content -->
                             </div>
                             <button class="modal-close is-large" aria-label="close"></button>
                         </div>
-                        <div id="modal-image20" class="modal modal-fx-3dSlit">
-                            <div class="modal-background"></div>
-                            <div class="modal-content is-huge is-image">
-                                <!-- content -->
-                                <img src="asset/image/linux/dhconf4.png" alt="but">
-                                <!-- end content -->
-                            </div>
-                            <button class="modal-close is-large" aria-label="close"></button>
-                        </div>
-                        <div id="modal-image21" class="modal modal-fx-3dSlit">
-                            <div class="modal-background"></div>
-                            <div class="modal-content is-huge is-image">
-                                <!-- content -->
-                                <img src="asset/image/linux/dhconf5.png" alt="but">
 
-                                <!-- end content -->
-                            </div>
-                            <button class="modal-close is-large" aria-label="close"></button>
-                        </div>
                     </div>
                 </section>
 
             </div>
-        </div><!-- FIN EQUQ 4-->
+        </div>
+        <!-- HTTP -->
         <div class="tab-pane " id="pane-5">
             <div class="content">
-                <h1>File Transfer Protocol</h1>
-                <p> El protocolo FTP (File Transfer Protocol), o Protocolo de transferencia de archivos por su
-                    traducción al español, es un protocolo de red utilizado para la transferencia de archivos entre las
-                    computadoras conectadas a una red TCP. En la actualidad son muchos los usuarios que han reemplazado
-                    al FTP por servicios de almacenamiento en línea como Dropbox, Google Drive u OneDrive, sobre todo
-                    por la comodidad de uso y transparencia que estos últimos ofrecen.</p>
+                <h1>Protocolo de Transferencia de Hipertexto</h1>
+                <p> El Protocolo de transferencia de hipertexto (en inglés, Hypertext Transfer Protocol, abreviado HTTP)
+                    es el protocolo de comunicación que permite las transferencias de información en la World Wide Web.
+                    HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force, colaboración que
+                    culminó en 1999 con la publicación de una serie de RFC, siendo el más importante de ellos el RFC
+                    2616 que especifica la versión 1.1. HTTP define la sintaxis y la semántica que utilizan los elementos
+                    de software de la arquitectura web (clientes, servidores, proxies) para comunicarse.
+
+                    HTTP es un protocolo sin estado, es decir, no guarda ninguna información sobre conexiones anteriores. El desarrollo
+                    de aplicaciones web necesita frecuentemente mantener estado. Para esto se usan las cookies, que es información
+                    que un servidor puede almacenar en el sistema cliente. Esto le permite a las aplicaciones web
+                    instituir la noción de sesión, y también permite rastrear usuarios ya que las cookies pueden guardarse
+                    en el cliente por tiempo indeterminado</p>
 
                 <h1>Instalación y Configuración </h1>
             </div>
@@ -706,89 +659,31 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="asset/image/linux/install1.png" alt="but"
+                                    <img src="asset/image/linux/http/1.png" alt="but"
                                          class="modal-button"
                                          data-target="modal-image22">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>1. Instalamos el paquete FTP por terminal de Linux. </h4>
+                                    <h4>1. Se instala el servidor apache2, el cual permite ser un servidor httop para la
+                                        visualización de páginas</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column is-4">
-                        <div class="card is-shady">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="asset/image/linux/intall4.png" alt="but"
-                                         class="modal-button"
-                                         data-target="modal-image23">
-                                </figure>
-                            </div>
-                            <div class="card-content  modal-button" data-target="modal-card2">
-                                <div class="content">
-                                    <h4>2..</h4>
-                                    <br>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card is-shady">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="asset/image/linux/confftp1.png" alt="but"
-                                         class="modal-button"
-                                         data-target="modal-image24">
-                                </figure>
-                            </div>
-                            <div class="card-content  modal-button" data-target="modal-card2">
-                                <div class="content">
-                                    <h4>3. Seguido de confugirar el servico FTP, procedemos a generar un dominio para
-                                        este servicio.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div id="modal-image22" class="modal modal-fx-3dSlit">
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/linux/install1.png" alt="but">
-                            <img src="asset/image/linux/install2.png" alt="but">
-                            <img src="asset/image/linux/install3.png" alt="but">
+                            <img src="asset/image/linux/http/1.png" alt="but">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
                     </div>
-                    <div id="modal-image23" class="modal modal-fx-3dSlit">
-                        <div class="modal-background"></div>
-                        <div class="modal-content is-huge is-image">
-                            <!-- content -->
-                            <img src="asset/image/linux/intall4.png" alt="but">
-                            <img src="asset/image/linux/install44.png" alt="but">
 
-                            <img src="asset/image/linux/install5.png" alt="but">
-                            <!-- end content -->
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                    <div id="modal-image24" class="modal modal-fx-3dSlit">
-                        <div class="modal-background"></div>
-                        <div class="modal-content is-huge is-image">
-                            <!-- content -->
-
-                            <img src="asset/image/linux/confftp1.png" alt="but">
-                            <img src="asset/image/linux/confftp2.png" alt="but">
-                            <img src="asset/image/linux/confftp3.png" alt="but">
-                            <!-- end content -->
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
                 </div>
             </section>
         </div><!-- FIN EQUQ 5-->
