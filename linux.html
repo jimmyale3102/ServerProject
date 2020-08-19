@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windows and Linux Server</title>
+    <!-- <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon"> -->
+    <link rel='stylesheet prefetch' href='https://unpkg.com/bulma@0.7.5/css/bulma.min.css'>
+    <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.7.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css"/>
+    <style>
+        .columns:nth-child(2) {
+            margin-top: -10rem;
+        }
+    </style>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/tabs.css">
+</head>
+<body>
+<nav class="navbar is-info">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://sarl.netlify.com/" target="_blank">
+            <img src="asset/image/logoBeta.png" alt="logo SARL"
+                 width="50" height="50">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start is-link">
+            <a class="navbar-item" href="index.html"><!--Direccionar-->
+                Windows
+            </a>
+            <a class="navbar-item" href="linux.html">
+                Linux
+            </a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                           data-social-target="#" target="_blank"
+                           href="https://twitter.com/Sergio_Rojas05">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                        </a>
+                        <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                           data-social-target="#" target="_blank"
+                           href="https://www.facebook.com/sergioandres.rojasleon">
+                                    <span class="icon">
+                                        <i class="fab fa-facebook"></i>
+                                    </span>
+                        </a>
+                        <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                           data-social-target="#" target="_blank"
+                           href="https://github.com/Sarl23">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Linux Ubuntu 18.04
+            </h1>
+            <h2 class="subtitle">
+                Explicación de Taller
+                <br>
+                by Sergio Rojas
+            </h2>
+        </div>
+    </div>
+    <div class="tabs is-boxed is-centered main-menu" id="nav">
+        <ul>
+            <ul>
+                <li data-target="pane-1" id="1" class="is-active">
+                    <a>
+                        <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li data-target="pane-2" id="2">
+                    <a>
+                        <span class="icon is-small"><i class="fa fa-object-group"></i></span>
+                        <span>BIND9</span>
+                    </a>
+                </li>
+                <li data-target="pane-3" id="3">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-project-diagram"></i></span>
+                        <span>DNS</span>
+                    </a>
+                </li>
+                <li data-target="pane-4" id="4">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-network-wired"></i></span>
+                        <span>DHCP</span>
+                    </a>
+                </li>
+                <li data-target="pane-5" id="5">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-network-wired"></i></span>
+                        <span>FTP</span>
+                    </a>
+                </li>
+                <li data-target="pane-6" id="6">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-mail-bulk"></i></span>
+                        <span>SMTP</span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane is-active" id="pane-1">
+            <div class="content">
+                <h1>El Taller de Linux Ubuntu 18.04</h1>
+                <p> Ubuntu 18.04 ya está aquí, y aunque suene demasiado optimista, o quizás sea parte del buen sabor de
+                    boca que deja Bionic Beaver cuando lo usas, me atrevería a decir que el futuro de Ubuntu luce
+                    brillante. O, al menos luce más interesante de lo que habían estado presentando en los últimos años.
+
+                    Ya con Ubuntu 17.10 habíamos podido echar un vistazo al nuevo rumbo de la distribución. Este es un
+                    Ubuntu que ha dejado atrás Unity, de una Canonical que ha dejado atrás sus ideas de la convergencia
+                    y Ubuntu Touch. Una empresa que ahora se va concentrar en su producto principal y rentable: el
+                    sistema operativo de escritorio.
+
+                    Con sabores novedosos como Ubuntu Budgie, los clásicos de siempre como Kubuntu con un KDE, un
+                    entorno que a veces parece avanzar mucho más que GNOME; o con distros como Ubuntu MATE que ya se
+                    habían plantado muy bien como alternativas al Ubuntu base con Unity, es el sabor original de la
+                    distro el que menos pasión y halagos lleva generando hace tiempo. Pero, algo parece estar
+                    cambiando</p>
+
+                <h2>Descripción</h2>
+                <p>El taller de Linux Ubuntu 18.04, da una pequeña descripción sobre lo más escencial de configuración
+                    la
+                    hora de instalar y montar los servicios de:
+                </p>
+                <ul>
+                    <li>Active Directory.</li>
+                    <li>Domain Name System ( DNS )</li>
+                    <li>Dynamic Host Configuration Protocol.( DHCP )</li>
+                    <li>File Transfer Protocol( FTP )</li>
+                    <li>Simple Mail Transfer Protocol ( SMTP )</li>
+                </ul>
+                <h2>Instalación De Ubuntu 18.04 </h2>
+                <p>Para la instación y desarrollo del taller , se procedio a descargar una Máquina Virtual y obtenida la
+                    imagen .iso de sistema operativo, de dio inicio al desarrollo del taller, la instalación de Linux
+                    Ubuntu 18.04 , es muy acorde a las necesidades de cada individuo, en este caso se utilizo la
+                    instalacion básica que se encuentra en la Red.</p>
+
+                <h2>Acerca de ... </h2>
+                <p>
+                    Estupendo que me conoscas, tengo 21 años y soy estudiante de Informática e Ingeniería de
+                    Sistemas en la Universidad Pedagógica y Tecnológica de Colombia. Soy una persona que puede cometer
+                    errores y, por lo tanto, aprender de ellos para lograr el éxito personal. Me gusta estar actualizado
+                    en informática y tecnologías.
+
+                    Actualmente estoy buscando una oportunidad para trabajar y mejorar mis habilidades, así como
+                    participar en una organización y retribuir a la comunidad o sociedad.
+                </p>
+                <a href="https://sarl.netlify.com/" class="button is-link is-medium" target="_blank">
+                    <span class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span>Conoce más acerca mi ...</span>
+                </a>
+            </div>
+        </div>
+        <div class="tab-pane" id="pane-2">
+            <div class="content">
+                <h1>Active Directory - Bind9 </h1>
+                <p> BInd9 es un servicio de directorio para su uso en un entorno Linux paquete. Se
+                    trata de una estructura de base de datos distribuida y jerárquica que comparte información de
+                    infraestructura para localizar, proteger, administrar y organizar los recursos del equipo y de la
+                    red, como archivos, usuarios, grupos, periféricos y dispositivos de red.
+                </p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/confIP1.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image1">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Iniciamos configurando la direccion IP que vamos a trabajar en el
+                                        servidor,asiendo uso del protocolo IPV4 por medio de las propiaedades de
+                                        red.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/confIP2.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image2">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2.Al cofigurar la red, seguido nos dirigimos a asiganción de las caracteristicas
+                                        de cada paquete" </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/confIP3.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image3">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Instalacion basica, la recomendada para todas la instalaciones </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image1" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/confIP1.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image2" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/confIP2.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image3" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/confIP3.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/ifconfig.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image4">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. Escogemos la opcione que deseamos añadir y seguimos los comandos </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/ifconfig1.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image5">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5. Comprobamos si los archivo estan bien añadidos y hacemos ping a los diectivos ping
+                                        "</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image4" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/ifconfig.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image5" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/ifconfig1.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div><!-- FIN DE ETIQ 2-->
+
+        <div class="tab-pane" id="pane-3">
+            <div class="content">
+                <h1>Domain Name Service</h1>
+                <p>El sistema de nombres de dominio (Domain Name System o DNS, por sus siglas en inglés) es un sistema
+                    de
+                    nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una
+                    red
+                    privada. Este sistema asocia información variada con nombre de dominio asignado a cada uno de los
+                    participantes. Su función más importante es "traducir" nombres inteligibles para las personas en
+                    identificadores binarios asociados con los equipos conectados a la red, esto con el propósito de
+                    poder
+                    localizar y direccionar estos equipos mundialmente.​</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/dnsinstall.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image7">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Nos dirigimos al terminal de LINUX
+                                        los pasos de instalación, agregamos la opción DNS, seguimos los pasos de la
+                                        instalación. es recomendable hacer el reinicio del servidor para poder
+                                        configurarlo. </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/dns1.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image8">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Después del reinici del servidor ,nos dirigimos al apartado de Adminstrador
+                                        DNS.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/dns2.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image9">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3.  </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image7" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/dnsinstall.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image8" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/dns1.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image9" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/dns2.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/dns3.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image10">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>4. </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/dns4.png" alt="butterfly image"
+                                         class="modal-button"
+                                         data-target="modal-image11">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>5.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image10" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/dns3.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image11" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/dns4.png" alt="butterfly">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- FIN EQUQ 3-->
+        <div class="tab-pane " id="pane-4">
+            <div class="content">
+                <h1>Dynamic Host Configuration Protocol</h1>
+                <p> El DHCP se desarrolló como solución para redes de gran envergadura y
+                    ordenadores portátiles y por ello complementa a BOOTP, entre otras cosas, por su capacidad para
+                    asignar automáticamente direcciones de red reutilizables y por la existencia de posibilidades de
+                    configuración adicionales.</p>
+
+                <p>La asignación de direcciones con DHCP se basa en un modelo cliente-servidor: el terminal que quiere
+                    conectarse solicita la configuración IP a un servidor DHCP que, por su parte, recurre a una base de
+                    datos que contiene los parámetros de red asignables.​</p>
+
+                <h1>Instalación y Configuración </h1>
+
+                <section class="container">
+                    <div class="columns features">
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/linux/dhinstall1.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image16">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>1.Iniciamos instando DHCP, de la misma forma que hemos instalado las
+                                            anteriores por terminal de Linux </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/linux/dhconf1.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image17">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>2. Seguido de instalar DHCP, para poder
+                                            configurar cada na de sus caracteristicas para nuevas conexiones de red</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/linux/dhconf2.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image18">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>3.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-image16" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/linux/dhinstall1.png" alt="but">
+                                <img src="asset/image/dhcp/install2.png" alt="bu">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image17" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/linux/dhconf1.png" alt="butterfly">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image18" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/linux/dhconf2.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="container">
+                    <div class="columns features">
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/linux/dhconf3.png" alt="butterfly"
+                                             class="modal-button"
+                                             data-target="modal-image19">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>4.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/linux/dhconf4.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image20">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>6.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="card is-shady">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="asset/image/linux/dhconf5.png" alt="butterfly image"
+                                             class="modal-button"
+                                             data-target="modal-image21">
+                                    </figure>
+                                </div>
+                                <div class="card-content  modal-button" data-target="modal-card2">
+                                    <div class="content">
+                                        <h4>7.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-image19" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/linux/dhconf3.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image20" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/linux/dhconf4.png" alt="but">
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        <div id="modal-image21" class="modal modal-fx-3dSlit">
+                            <div class="modal-background"></div>
+                            <div class="modal-content is-huge is-image">
+                                <!-- content -->
+                                <img src="asset/image/linux/dhconf5.png" alt="but">
+
+                                <!-- end content -->
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div><!-- FIN EQUQ 4-->
+        <div class="tab-pane " id="pane-5">
+            <div class="content">
+                <h1>File Transfer Protocol</h1>
+                <p> El protocolo FTP (File Transfer Protocol), o Protocolo de transferencia de archivos por su
+                    traducción al español, es un protocolo de red utilizado para la transferencia de archivos entre las
+                    computadoras conectadas a una red TCP. En la actualidad son muchos los usuarios que han reemplazado
+                    al FTP por servicios de almacenamiento en línea como Dropbox, Google Drive u OneDrive, sobre todo
+                    por la comodidad de uso y transparencia que estos últimos ofrecen.</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/install1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image22">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Instalamos el paquete FTP por terminal de Linux. </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/intall4.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image23">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2..</h4>
+                                    <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/linux/confftp1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image24">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Seguido de confugirar el servico FTP, procedemos a generar un dominio para
+                                        este servicio.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image22" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/install1.png" alt="but">
+                            <img src="asset/image/linux/install2.png" alt="but">
+                            <img src="asset/image/linux/install3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image23" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/linux/intall4.png" alt="but">
+                            <img src="asset/image/linux/install44.png" alt="but">
+
+                            <img src="asset/image/linux/install5.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image24" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+
+                            <img src="asset/image/linux/confftp1.png" alt="but">
+                            <img src="asset/image/linux/confftp2.png" alt="but">
+                            <img src="asset/image/linux/confftp3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div><!-- FIN EQUQ 5-->
+        <div class="tab-pane " id="pane-6">
+            <div class="content">
+                <h1>Simple Mail Transfer Protocol</h1>
+                <p> El protocolo para transferencia simple de correo es un protocolo de red utilizado para el
+                    intercambio de mensajes de correo electrónico entre computadoras u otros dispositivos
+                    (PDA, teléfonos móviles, impresoras, etc).Son estándares oficiales de Internet que fueron
+                    reemplazados respectivamente por el RFC 2821 y el RFC 2822, que a su vez lo fueron por el RFC 5321 y
+                    el RFC 5322.1​</p>
+
+                <p>El funcionamiento de este protocolo se da en línea, de manera que opera en los servicios de correo
+                    electrónico. Sin embargo, este protocolo posee algunas limitaciones en cuanto a la recepción de
+                    mensajes en el servidor de destino (cola de mensajes recibidos). Como alternativa a esta limitación
+                    se asocia normalmente a este protocolo con otros, como el POP o IMAP, otorgando a SMTP la tarea
+                    específica de enviar correo, y recibirlos empleando los otros protocolos antes mencionados (POP O
+                    IMAP)..</p>
+
+                <h1>Instalación y Configuración </h1>
+            </div>
+
+            <section class="container">
+                <div class="columns features">
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/desc1.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image25">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>1. Se dio inicio a la configuación de SMTP por medio de el complemento llamado
+                                        MailEnable,es un servidor de correo electrónico comercial basado en Windows de
+                                        forma gratuita se puede implementar y dar servicios SMTP por medios de DNS.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/instm2.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image26">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>2. Despueés de descargar el complemento, lo ejecutamos para instalarlo dentro
+                                        del servidor , siguiendo los pasos mostrados y leyendo con atención cada sección
+                                        dentro del asistente de instalación</h4>
+                                    <br>
+                                    <h4>Seguido nos pedira la configuración tanto del nombre del dominio como el del la
+                                        IP, asigando para el puerto 25,se continuara con la instalacion, la cual puede
+                                        tardar algunos
+                                        minutos, siguiente nos pedira el nombre con el cual sera reconodido el servicio
+                                        de emial empresarial</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="asset/image/smtp/confimaiienable3.png" alt="but"
+                                         class="modal-button"
+                                         data-target="modal-image27">
+                                </figure>
+                            </div>
+                            <div class="card-content  modal-button" data-target="modal-card2">
+                                <div class="content">
+                                    <h4>3. Al tener instalado y configurado el MailEnable procedemos al configuración de
+                                        parte de la opción SMTP que se encuentra en la parte izquierda del menu , en
+                                        donde se encontrara la opción, hacemos click derecho y nos dirijimos
+                                        propiedades, asiganamos DNS que estamos trabajando, junto con su IP.</h4>
+
+                                    <h4>Al tener ya configurada la opcion dentro las propiedades de SMTP , asignamos los
+                                        usuarios que va a tener nuestro servio de email, tal y como se muestra en la
+                                        figura.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-image25" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/desc1.png" alt="but">
+                            <img src="asset/image/smtp/desc2.png" alt="but">
+                            <img src="asset/image/smtp/desc3.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image26" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/instm2.png" alt="but">
+                            <img src="asset/image/smtp/conf1.png" alt="but">
+                            <img src="asset/image/smtp/conf2.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                    <div id="modal-image27" class="modal modal-fx-3dSlit">
+                        <div class="modal-background"></div>
+                        <div class="modal-content is-huge is-image">
+                            <!-- content -->
+                            <img src="asset/image/smtp/confimaiienable3.png" alt="but">
+                            <img src="asset/image/smtp/confimaiienable4.png" alt="but">
+                            <img src="asset/image/smtp/confimaiienable5.png" alt="but">
+                            <!-- end content -->
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </section>
+        </div><!-- FIN EQUQ 6-->
+    </div>
+</section>
+<script src="asset/js/bulma.js"></script>
+<script src="asset/js/tabs.js"></script>
+<script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</body>
+</html>
