@@ -96,25 +96,25 @@
                 <li data-target="pane-2" id="2">
                     <a>
                         <span class="icon is-small"><i class="fa fa-object-group"></i></span>
-                        <span>BIND9</span>
+                        <span>DNS</span>
                     </a>
                 </li>
                 <li data-target="pane-3" id="3">
                     <a>
                         <span class="icon is-small"><i class="fas fa-project-diagram"></i></span>
-                        <span>DNS</span>
+                        <span>DHCP</span>
                     </a>
                 </li>
                 <li data-target="pane-4" id="4">
                     <a>
                         <span class="icon is-small"><i class="fas fa-network-wired"></i></span>
-                        <span>DHCP</span>
+                        <span>FTP</span>
                     </a>
                 </li>
                 <li data-target="pane-5" id="5">
                     <a>
                         <span class="icon is-small"><i class="fas fa-network-wired"></i></span>
-                        <span>FTP</span>
+                        <span>HTTP</span>
                     </a>
                 </li>
                 <li data-target="pane-6" id="6">
@@ -220,9 +220,11 @@
                 </section>
             </div>
         </div>
+
+        <!-- DNS-->
         <div class="tab-pane" id="pane-2">
             <div class="content">
-                <h1>Bind9 </h1>
+                <h1>DNS - Bind9 </h1>
                 <p> BInd9 es un servicio de directorio para su uso en un entorno Linux paquete. Se
                     trata de una estructura de base de datos distribuida y jerárquica que comparte información de
                     infraestructura para localizar, proteger, administrar y organizar los recursos del equipo y de la
@@ -403,7 +405,7 @@
                                 <figure class="image is-4by3">
                                     <img src="asset/image/linux/dns/10.png" alt="butterfly image"
                                          class="modal-button"
-                                         data-target="modal-image7">
+                                         data-target="modal-image227">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
@@ -415,7 +417,7 @@
                     </div>
 
 
-                    <div id="modal-image7" class="modal modal-fx-3dSlit">
+                    <div id="modal-image227" class="modal modal-fx-3dSlit">
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
@@ -427,20 +429,19 @@
 
                 </div>
             </section>
-        </div><!-- FIN DE ETIQ 2-->
-
+        </div>
+        <!-- DHCP-->
         <div class="tab-pane" id="pane-3">
             <div class="content">
-                <h1>Domain Name Service</h1>
-                <p>El sistema de nombres de dominio (Domain Name System o DNS, por sus siglas en inglés) es un sistema
-                    de
-                    nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una
-                    red
-                    privada. Este sistema asocia información variada con nombre de dominio asignado a cada uno de los
-                    participantes. Su función más importante es "traducir" nombres inteligibles para las personas en
-                    identificadores binarios asociados con los equipos conectados a la red, esto con el propósito de
-                    poder
-                    localizar y direccionar estos equipos mundialmente.​</p>
+                <h1>Dynamic Host Configuration Protocol</h1>
+                <p> El DHCP se desarrolló como solución para redes de gran envergadura y
+                    ordenadores portátiles y por ello complementa a BOOTP, entre otras cosas, por su capacidad para
+                    asignar automáticamente direcciones de red reutilizables y por la existencia de posibilidades de
+                    configuración adicionales.</p>
+
+                <p>La asignación de direcciones con DHCP se basa en un modelo cliente-servidor: el terminal que quiere
+                    conectarse solicita la configuración IP a un servidor DHCP que, por su parte, recurre a una base de
+                    datos que contiene los parámetros de red asignables.​</p>
 
                 <h1>Instalación y Configuración </h1>
             </div>
@@ -450,17 +451,16 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="asset/image/linux/dnsinstall.png" alt="butterfly image"
+                                    <img src="asset/image/linux/dhcp/1.png" alt="butterfly image"
                                          class="modal-button"
                                          data-target="modal-image7">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>1. Nos dirigimos al terminal de LINUX
-                                        los pasos de instalación, agregamos la opción DNS, seguimos los pasos de la
-                                        instalación. es recomendable hacer el reinicio del servidor para poder
-                                        configurarlo. </h4>
+                                    <h4>1. Se descarga y configura el DHCP, como: Las subredes, el rango y las direcciones IP
+                                        QUe se van a asignar a cada uno de los dispositivos que se van a conectar al
+                                        servidor. </h4>
                                 </div>
                             </div>
                         </div>
@@ -469,31 +469,14 @@
                         <div class="card is-shady">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                    <img src="asset/image/linux/dns1.png" alt="butterfly image"
+                                    <img src="asset/image/linux/dhcp/2.png" alt="butterfly image"
                                          class="modal-button"
                                          data-target="modal-image8">
                                 </figure>
                             </div>
                             <div class="card-content  modal-button" data-target="modal-card2">
                                 <div class="content">
-                                    <h4>2. Después del reinici del servidor ,nos dirigimos al apartado de Adminstrador
-                                        DNS.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card is-shady">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="asset/image/linux/dns2.png" alt="butterfly image"
-                                         class="modal-button"
-                                         data-target="modal-image9">
-                                </figure>
-                            </div>
-                            <div class="card-content  modal-button" data-target="modal-card2">
-                                <div class="content">
-                                    <h4>3.  </h4>
+                                    <h4>2. Después del reinici del servidor,se verifica el estado del mismo.</h4>
                                 </div>
                             </div>
                         </div>
@@ -503,7 +486,7 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/linux/dnsinstall.png" alt="butterfly">
+                            <img src="asset/image/linux/dhcp/1.png" alt="butterfly">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
@@ -512,71 +495,7 @@
                         <div class="modal-background"></div>
                         <div class="modal-content is-huge is-image">
                             <!-- content -->
-                            <img src="asset/image/linux/dns1.png" alt="butterfly">
-                            <!-- end content -->
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                    <div id="modal-image9" class="modal modal-fx-3dSlit">
-                        <div class="modal-background"></div>
-                        <div class="modal-content is-huge is-image">
-                            <!-- content -->
-                            <img src="asset/image/linux/dns2.png" alt="butterfly">
-                            <!-- end content -->
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                </div>
-            </section>
-            <section class="container">
-                <div class="columns features">
-                    <div class="column is-4">
-                        <div class="card is-shady">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="asset/image/linux/dns3.png" alt="butterfly image"
-                                         class="modal-button"
-                                         data-target="modal-image10">
-                                </figure>
-                            </div>
-                            <div class="card-content  modal-button" data-target="modal-card2">
-                                <div class="content">
-                                    <h4>4. </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <div class="card is-shady">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="asset/image/linux/dns4.png" alt="butterfly image"
-                                         class="modal-button"
-                                         data-target="modal-image11">
-                                </figure>
-                            </div>
-                            <div class="card-content  modal-button" data-target="modal-card2">
-                                <div class="content">
-                                    <h4>5.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="modal-image10" class="modal modal-fx-3dSlit">
-                        <div class="modal-background"></div>
-                        <div class="modal-content is-huge is-image">
-                            <!-- content -->
-                            <img src="asset/image/linux/dns3.png" alt="butterfly">
-                            <!-- end content -->
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                    <div id="modal-image11" class="modal modal-fx-3dSlit">
-                        <div class="modal-background"></div>
-                        <div class="modal-content is-huge is-image">
-                            <!-- content -->
-                            <img src="asset/image/linux/dns4.png" alt="butterfly">
+                            <img src="asset/image/linux/dhcp/2.png" alt="butterfly">
                             <!-- end content -->
                         </div>
                         <button class="modal-close is-large" aria-label="close"></button>
@@ -584,7 +503,9 @@
                 </div>
             </section>
 
-        </div><!-- FIN EQUQ 3-->
+
+        </div>
+        <!-- FTP-->
         <div class="tab-pane " id="pane-4">
             <div class="content">
                 <h1>Dynamic Host Configuration Protocol</h1>
